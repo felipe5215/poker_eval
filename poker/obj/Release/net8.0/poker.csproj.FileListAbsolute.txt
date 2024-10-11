@@ -1,0 +1,14 @@
+/home/felipe/projects/poker/poker/poker/bin/Release/net8.0/poker
+/home/felipe/projects/poker/poker/poker/bin/Release/net8.0/poker.deps.json
+/home/felipe/projects/poker/poker/poker/bin/Release/net8.0/poker.runtimeconfig.json
+/home/felipe/projects/poker/poker/poker/bin/Release/net8.0/poker.dll
+/home/felipe/projects/poker/poker/poker/bin/Release/net8.0/poker.pdb
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.AssemblyInfoInputs.cache
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.AssemblyInfo.cs
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.csproj.CoreCompileInputs.cache
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.dll
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/refint/poker.dll
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.pdb
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/poker.genruntimeconfig.cache
+/home/felipe/projects/poker/poker/poker/obj/Release/net8.0/ref/poker.dll
