@@ -1,13 +1,14 @@
+using System.Diagnostics;
+
 namespace poker;
 
 public static class PokerHandEvaluator
 {
     public static HandRanking EvaluateHand(List<Card> hand)
     {
-        if (hand == null || hand.Count < 5)
-            throw new ArgumentException("Hand must contain at least 5 cards.");
+        if (hand.Count != 5)
+            throw new ArgumentException("Hand must contain exactly 5 cards.");
 
-        // Sort hand by rank
         var sortedHand = hand.OrderBy(c => c.Rank).ToList();
 
         // Create frequency maps
@@ -32,10 +33,14 @@ public static class PokerHandEvaluator
         }
 
         if (isFlush)
+        {
             return HandRanking.Flush;
+        }
 
         if (isStraight)
+        {
             return HandRanking.Straight;
+        }
 
         return rankGroups.First().Count() switch
         {
@@ -71,6 +76,11 @@ public static class PokerHandEvaluator
     }
 
 
+    public static List<Card> GetWinningHand(List<Card> hand1, List<Card> hand2)
+    {
+        return CompareHands(hand1, hand2) > 0 ? hand1 : hand2;
+    }
+
     public static int CompareHands(List<Card> hand1, List<Card> hand2)
     {
         var rank1 = EvaluateHand(hand1);
@@ -81,11 +91,9 @@ public static class PokerHandEvaluator
             // Higher hand ranking wins
             return rank1 > rank2 ? 1 : -1;
         }
-        else
-        {
-            // Hand rankings are equal, apply tie-breakers
-            return CompareTieBreaker(rank1, hand1, hand2);
-        }
+
+        // Hand rankings are equal, apply tie-breakers
+        return CompareTieBreaker(rank1, hand1, hand2);
     }
 
     private static int CompareTieBreaker(HandRanking handRanking, List<Card> hand1, List<Card> hand2)

@@ -12,3 +12,4 @@
 /home/felipe/projects/poker/poker/poker/obj/Debug/net8.0/poker.pdb
 /home/felipe/projects/poker/poker/poker/obj/Debug/net8.0/poker.genruntimeconfig.cache
 /home/felipe/projects/poker/poker/poker/obj/Debug/net8.0/ref/poker.dll
+/home/felipe/projects/poker/poker/poker/obj/Debug/net8.0/poker.sourcelink.json
